@@ -85,6 +85,44 @@ export default function ProjectDetail() {
         style={{ scaleX, backgroundColor: project.accentColor }}
       />
 
+      {/* Shared Navigation Header for Project Demos */}
+      <nav className={cn(
+        "sticky top-0 z-40 border-b backdrop-blur-md transition-all duration-300",
+        isDark 
+          ? "bg-zinc-950/80 border-zinc-800 text-white" 
+          : "bg-white/80 border-zinc-200 text-zinc-900"
+      )}>
+        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+          <Link to="/" className="text-sm font-bold tracking-tight uppercase flex items-center gap-2">
+            <span 
+              className="text-white w-6 h-6 rounded flex items-center justify-center text-xs font-mono italic"
+              style={{ backgroundColor: project.accentColor }}
+            >
+              V
+            </span>
+            VibeCode Studio
+          </Link>
+          <div className="flex items-center gap-6">
+            <Link 
+              to="/updated-policies" 
+              className="text-xs font-bold text-sky-500 hover:text-sky-600 transition-colors flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 bg-sky-500 rounded-full animate-pulse" />
+              Updated Policies Tool
+            </Link>
+            <Link 
+              to="/" 
+              className={cn(
+                "text-xs font-medium transition-colors",
+                isDark ? "text-zinc-400 hover:text-white" : "text-zinc-500 hover:text-zinc-900"
+              )}
+            >
+              Back to Home
+            </Link>
+          </div>
+        </div>
+      </nav>
+
       <main>
         {/* Hero Designs - Completely Different for Each */}
         <section className={cn(

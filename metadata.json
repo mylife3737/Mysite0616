@@ -1,6 +1,8 @@
 {
-  "name": "Dan's Lawn Care",
-  "description": "Premium portfolio for a website setup business featuring five distinct small business landing pages: Lawn Care, Handyman, Bakery, Pet Grooming, and Pizza Shop.",
+  "name": "Aqua Glow Pool Service",
+  "description": "Premium back-office operational center, contract estimator, and policy guidelines converter designed exclusively for Aqua Glow Pool Service.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

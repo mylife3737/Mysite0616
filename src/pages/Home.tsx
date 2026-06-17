@@ -19,6 +19,10 @@ export default function Home() {
             VibeCode Studio
           </Link>
           <div className="flex items-center gap-6">
+            <Link to="/updated-policies" className="text-sm font-bold text-sky-500 hover:text-sky-600 transition-colors flex items-center gap-1">
+              <span className="w-1.5 h-1.5 bg-sky-500 rounded-full animate-pulse" />
+              Updated Policies
+            </Link>
             <Link to="#work" className="text-sm font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Our Work</Link>
             <Link to="#contact" className="text-sm font-medium text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">Inquire</Link>
             <div className="h-4 w-[1px] bg-zinc-200 dark:bg-zinc-800" />

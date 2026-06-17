@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './hooks/useTheme';
 import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
+import UpdatedPolicies from './pages/UpdatedPolicies';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project/:projectId" element={<ProjectDetail />} />
+          <Route path="/updated-policies" element={<UpdatedPolicies />} />
         </Routes>
       </Router>
     </ThemeProvider>
