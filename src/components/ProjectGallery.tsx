@@ -40,13 +40,13 @@ export default function ProjectGallery() {
             <span className="w-1.5 h-1.5 bg-red-600 rounded-full animate-pulse" />
             Standalone App Copy
           </span>
-          <h4 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">Fixit Sam Repairs (Standalone Version)</h4>
+          <h4 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">Fix It First by Ruben (Standalone Version)</h4>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-2xl leading-relaxed">
-            We duplicated the custom Fixit Sam app with the Estimator & Photo Uploader to its own independent standalone page, while preserving your original portfolio showcase below intact!
+            We renamed and duplicated the custom handyman application with the Estimator & Photo Uploader to its own independent page, while keeping your original project showcase intact!
           </p>
         </div>
         <Link 
-          to="/fixit-sam"
+          to="/fix-it-first"
           className="shrink-0 self-start md:self-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-lg shadow-red-600/10 hover:shadow-red-600/20 active:scale-95 transition-all duration-250 flex items-center gap-2"
         >
           Open Standalone App

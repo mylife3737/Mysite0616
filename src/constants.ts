@@ -61,19 +61,19 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'handyman',
-    name: 'Fixit Sam',
-    businessName: 'Fixit Sam Repairs',
+    name: 'Fix It First',
+    businessName: 'Fix It First Repairs',
     description: 'Home repairs made simple and reliable.',
-    logo: 'FixitSam',
+    logo: 'FixitFirst',
     heroImage: 'https://placehold.co/1920x1080?text=Handyman+Hero',
     accentColor: '#dc2626', // red-600
     theme: 'dark',
     fontFamily: 'font-handy',
     serviceSectionTitle: 'The Fix List',
     serviceSectionSubtitle: "Small jobs, big relief.",
-    aboutText: "I am a retired school teacher who raised 4 kids and now keep busy doing the handywork that neighbors actually need. I bring a teacher's patience and an expert's eye to every small fix and large project.",
+    aboutText: "I keep busy doing the handywork that neighbors actually need. I bring a craftsman's patience and an expert's eye to every small fix and large project.",
     services: [
-      { title: 'Faucet & Leak Repair', description: 'Stopping drips and clearing clogs in kitchens and baths.', icon: Droplets },
+      { title: 'Cabinet & Hinge Repair', description: 'Re-aligning doors, fixing hinges, and cabinet adjustments.', icon: Hammer },
       { title: 'Light & Fixtures', description: 'Changing out old lights and ceiling fans safely.', icon: Zap },
       { title: 'Shelving & Mounts', description: 'Mounting TVs and hanging shelves exactly where you want them.', icon: Wrench },
       { title: 'Power Washing', description: 'Reviving driveways, decks, and siding.', icon: Waves },
@@ -82,7 +82,7 @@ export const PROJECTS: Project[] = [
       { title: 'Drywall Patching', description: 'Seamless repairs for holes and scuffs.', icon: Wrench }
     ],
     testimonials: [
-      { name: 'Mike Ross', role: 'Homeowner', content: 'Sam fixed my kitchen sink and a closet door in under an hour. Great service.', avatar: 'https://i.pravatar.cc/150?u=mike' }
+      { name: 'Mike Ross', role: 'Homeowner', content: 'Ruben fixed my kitchen cabinets and a closet door in under an hour. Great service.', avatar: 'https://i.pravatar.cc/150?u=mike' }
     ]
   },
   {
