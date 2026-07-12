@@ -33,6 +33,27 @@ export default function ProjectGallery() {
 
   return (
     <div id="project-gallery-wrapper" className="w-full">
+      {/* Standalone App Showcase Banner */}
+      <div className="mb-12 p-6 md:p-8 bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/80 border-l-4 border-l-red-600 rounded-r-3xl flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-[0_4px_30px_rgba(0,0,0,0.02)] transition-all">
+        <div className="space-y-2">
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-red-100 dark:bg-red-950/40 text-red-600 dark:text-red-400 text-[10px] font-bold uppercase tracking-widest">
+            <span className="w-1.5 h-1.5 bg-red-600 rounded-full animate-pulse" />
+            Standalone App Copy
+          </span>
+          <h4 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">Fixit Sam Repairs (Standalone Version)</h4>
+          <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-2xl leading-relaxed">
+            We duplicated the custom Fixit Sam app with the Estimator & Photo Uploader to its own independent standalone page, while preserving your original portfolio showcase below intact!
+          </p>
+        </div>
+        <Link 
+          to="/fixit-sam"
+          className="shrink-0 self-start md:self-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-lg shadow-red-600/10 hover:shadow-red-600/20 active:scale-95 transition-all duration-250 flex items-center gap-2"
+        >
+          Open Standalone App
+          <ArrowRight className="w-3.5 h-3.5" />
+        </Link>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {galleryProjects.map((project, idx) => {
           const IconComponent = getProjectIcon(project.id);

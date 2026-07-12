@@ -131,13 +131,9 @@ export default function UpdatedPolicies() {
       <nav className="sticky top-0 z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-900 py-3 px-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <Link 
-              to="/" 
-              className="p-2 border border-zinc-200 dark:border-zinc-850 hover:bg-zinc-100 dark:hover:bg-zinc-850 rounded-xl transition-all"
-              title="Return to Home Dashboard"
-            >
-              <ArrowLeft className="w-4 h-4 text-zinc-650 dark:text-zinc-300" />
-            </Link>
+            <div className="p-2 border border-sky-100 dark:border-sky-905 bg-sky-50 dark:bg-sky-950/40 text-sky-500 rounded-xl transition-all flex items-center justify-center">
+              <Droplets className="w-4 h-4" />
+            </div>
             
             <div className="leading-tight">
               <span className="text-[10px] uppercase font-bold tracking-widest text-sky-500 font-mono">
