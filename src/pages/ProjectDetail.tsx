@@ -33,8 +33,9 @@ import { HomeCleanup } from '../components/projects/HomeCleanup';
 import { Bakery } from '../components/projects/Bakery';
 import { DansCard } from '../components/projects/DansCard';
 
-export default function ProjectDetail() {
-  const { projectId } = useParams();
+export default function ProjectDetail({ defaultProjectId }: { defaultProjectId?: string } = {}) {
+  const params = useParams();
+  const projectId = params.projectId || defaultProjectId;
   const navigate = useNavigate();
   const [hasHoveredPool, setHasHoveredPool] = useState(false);
   const project = PROJECTS.find(p => p.id === projectId);
@@ -58,7 +59,7 @@ export default function ProjectDetail() {
 
   useEffect(() => {
     if (!project) {
-      navigate('/');
+      if (!defaultProjectId) navigate('/');
       return;
     }
     // Simple SEO update
@@ -1018,7 +1019,7 @@ export default function ProjectDetail() {
                       <img src={t.avatar} alt={t.name} className="w-12 h-12 rounded-full bg-zinc-200" referrerPolicy="no-referrer" />
                       <div>
                         <h5 className="font-bold">{t.name}</h5>
-                        <p className="text-xs opacity-50 uppercase tracking-widest">{t.role}</p>
+                        {t.role && <p className="text-xs opacity-50 uppercase tracking-widest">{t.role}</p>}
                       </div>
                     </div>
                   </div>

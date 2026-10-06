@@ -61,10 +61,10 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'handyman',
-    name: 'Fix It First',
-    businessName: 'Fix It First Repairs',
+    name: 'Fixit Sam',
+    businessName: 'Fixit Sam Repairs',
     description: 'Home repairs made simple and reliable.',
-    logo: 'FixitFirst',
+    logo: 'FixitSam',
     heroImage: 'https://placehold.co/1920x1080?text=Handyman+Hero',
     accentColor: '#dc2626', // red-600
     theme: 'dark',
@@ -82,7 +82,7 @@ export const PROJECTS: Project[] = [
       { title: 'Drywall Patching', description: 'Seamless repairs for holes and scuffs.', icon: Wrench }
     ],
     testimonials: [
-      { name: 'Mike Ross', role: 'Homeowner', content: 'Ruben fixed my kitchen cabinets and a closet door in under an hour. Great service.', avatar: 'https://i.pravatar.cc/150?u=mike' }
+      { name: 'Mike Ross', role: 'Homeowner', content: 'Sam fixed my kitchen cabinets and a closet door in under an hour. Great service.', avatar: 'https://i.pravatar.cc/150?u=mike' }
     ]
   },
   {

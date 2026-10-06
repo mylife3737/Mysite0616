@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Lexend:wght@300;400;600&family=Space+Grotesk:wght@300;400;700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Quicksand:wght@300;400;600&family=Bebas+Neue&family=Outfit:wght@300;400;700&family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-lawn: "Lexend", sans-serif;
+  --font-handy: "Space Grotesk", sans-serif;
+  --font-bakery: "Fraunces", serif;
+  --font-pet: "Quicksand", sans-serif;
+  --font-pizza: "Bebas Neue", sans-serif;
+  --font-pool: "Outfit", sans-serif;
+  --font-clean: "DM Sans", sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 9 9 11;
+    --primary: 9 9 11;
+    --secondary: 161 161 170;
+  }
+
+  .dark {
+    --background: 9 9 11;
+    --foreground: 250 250 250;
+    --primary: 250 250 250;
+    --secondary: 113 113 122;
+  }
+
+  body {
+    @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))] font-sans antialiased;
+  }
+}
+
+/* Print Overrides */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Hide absolutely everything except our paper document page */
+  header, footer, nav, button, input, select, textarea, section, aside, h2.text-sm {
+    display: none !important;
+  }
+
+  /* Target exact elements to hide in Home/Detail layouts */
+  #contact, #work, #project-gallery-wrapper, #pdf-studio-container > div:first-child, .print\:hidden {
+    display: none !important;
+  }
+
+  /* Make sure container doesn't overflow or clip */
+  #pdf-studio-container {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Absolute clean A4 page centering and styling on active physical print sheet */
+  #printable-document-root {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    display: block !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}
+
+.markdown-body h1 { @apply text-4xl font-bold mb-4; }
+.markdown-body p { @apply mb-4 leading-relaxed; }

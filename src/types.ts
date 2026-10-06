@@ -2,9 +2,9 @@ import { LucideIcon } from 'lucide-react';
 
 export interface Testimonial {
   name: string;
-  role: string;
+  role?: string;
   content: string;
-  avatar: string;
+  avatar?: string;
 }
 
 export interface Service {
